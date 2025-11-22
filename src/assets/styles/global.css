@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-purple: #c084fc;
+  --color-royal-purple: #a021c8;
+  --color-dark-purple: #4a006f;
+  --color-dark-alpha: #151313BF;
+  --color-dark-violet: #351446E8;
+
+  --font-title: Supersonic-Rocketship, sans-serif;
+  --font-general: JetBrainsMono, monospace;
+
+  --color-modal-white: #FFFF;
+  --color-modal-black: #00000099;
+}
+
+@layer utilities {
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: #9a00ee #9c9a9c3b;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #a855f7;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #c084fc;
+  }
+}
+
+@font-face {
+  font-family: "Supersonic-Rocketship";
+  src: url('../fonts/Supersonic-Rocketship.ttf');
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url('../fonts/JetBrainsMono-Italic-VariableFont_wght.ttf');
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
