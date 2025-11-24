@@ -1,4 +1,4 @@
-import { House, UserRound, SquareCode, Network, Mail, ContactRound } from 'lucide-react';
+import { House, SquareCode, Network, Mail, ContactRound } from 'lucide-react';
 import { ThemesContext } from '../../context/Themes.jsx';
 import { use } from 'react';
 import { Link } from "react-router-dom";
@@ -12,10 +12,10 @@ const NavigationHeader = () => {
         <nav className={`${theme.colors.navBg} rounded-2xl border-2 border-purple-500/20 p-0 m-0`}>
             <ul className="flex gap-8 pt-3.5 pr-7 pb-3.5 pl-7">
                 <li className='cursor-pointer'>
-                     <Link to="/"><House className={`w-10 h-10 ${theme.colors.icons}`} /></Link>
+                    <Link to="/"><House className={`w-10 h-10 ${theme.colors.icons}`} /></Link>
                 </li>
                 <li className='cursor-pointer'>
-                    <Link to="/about"><UserRound className={`w-10 h-10 ${theme.colors.icons}`} /></Link>
+                    <Link to="/about"><ContactRound className={`w-10 h-10 ${theme.colors.icons}`} /></Link>
                 </li>
 
                 <li className='cursor-pointer'>
@@ -27,7 +27,7 @@ const NavigationHeader = () => {
                 </li>
 
                 <li className='cursor-pointer'>
-                    <a href="#contact"><Mail className={`w-10 h-10 ${theme.colors.icons}`} /></a>
+                    <Link to="/contact"><Mail className={`w-10 h-10 ${theme.colors.icons}`} /></Link>
                 </li>
 
             </ul>
