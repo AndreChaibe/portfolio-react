@@ -28,7 +28,7 @@ const IntroductionArea = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 1, type: "tween" }}
-                className="flex justify-center items-center w-[100%] gap-6 font-general font-bold text-white mt-5
+                className="flex justify-center items-center w-[100%] gap-6 font-general font-bold text-white my-5
                 [&>Button>a]:px-5 [&>Button>a]:py-3 [&>Button>a]:rounded-2xl [&>Button>a]:text-2xl">
 
                 <Button><a className={`${theme.colors.buttonBg} cursor-pointer`}>Contrate-me</a></Button>
