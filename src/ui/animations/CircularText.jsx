@@ -1,7 +1,6 @@
-import { useEffect, use } from 'react';
+import { useEffect } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion, useAnimation, useMotionValue } from 'motion/react';
-import { ThemesContext } from '../../context/Themes.jsx';
 
 const getRotationTransition = (duration, from, loop = true) => ({
   from,
@@ -28,7 +27,6 @@ const CircularText = ({
   className = '',
   children 
 }) => {
-  const { theme } = use(ThemesContext);
   const letters = Array.from(text);
   const controls = useAnimation();
   const rotation = useMotionValue(0);
@@ -95,7 +93,7 @@ const CircularText = ({
     >
       
       <motion.div
-        className={`absolute inset-0 ${theme.colors.text} font-black text-center cursor-pointer`}
+        className="absolute inset-0 font-black text-center cursor-pointer"
         style={{ rotate: rotation }}
         initial={{ rotate: 0 }}
         animate={controls}

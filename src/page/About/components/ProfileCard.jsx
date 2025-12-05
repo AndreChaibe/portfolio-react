@@ -3,6 +3,7 @@ import { ThemesContext } from "../../../context/Themes.jsx";
 import { ShinyText, CircularText } from "../../../ui/animations";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+
 import profilePhoto from "../../../assets/imgs/about/photo-web-developer.webp";
 
 const ProfileCard = () => {
@@ -12,13 +13,13 @@ const ProfileCard = () => {
   return (
 
     <motion.div
-      className={`${theme.colors.containerBg} rounded-b-3xl border-5 ${theme.colors.containerBorder} relative`}
+      className={`${theme.background} rounded-b-3xl border-5 ${theme.colors.containerBorder} relative`}
       initial={{ opacity: 0.1, left: -150 }}
       whileInView={{ opacity: 1, left: 0 }}
       transition={{ type: "tween", ease: "easeInOut", duration: 0.5 }}
     >
 
-      <ShinyText>
+      <ShinyText gradientColors={theme.colors.titleGradient}>
         <h1 className={`text-5xl font-title text-center mb-4 border-b-4 ${theme.colors.containerBorder} p-4`}>Sobre mim</h1>
       </ShinyText>
 

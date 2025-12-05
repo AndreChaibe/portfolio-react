@@ -1,11 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-light-purple: #c084fc;
-  --color-royal-purple: #a021c8;
-  --color-dark-purple: #4a006f;
-  --color-dark-alpha: #151313BF;
-  --color-dark-violet: #351446E8;
 
   --font-title: Supersonic-Rocketship, sans-serif;
   --font-general: JetBrainsMono, monospace;

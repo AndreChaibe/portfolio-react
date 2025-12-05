@@ -5,7 +5,7 @@ function loadThemeFromStorage() {
     const savedThemeJSON = localStorage.getItem("currentTheme");
 
     if (savedThemeJSON) return JSON.parse(savedThemeJSON);
-    return themes.black; 
+    return themes.black;
 }
 
 const themes = {
@@ -16,12 +16,18 @@ const themes = {
             text: "text-black",
             highlightText: "text-purple-700",
             navBg: "bg-[#f6e5ff]",
-            icons: "text-dark-purple",
+            icons: "text-[#8128CB]",
+            iconsBg: "bg-[#F6F4F8DE]",
             title: "text-[#990BE1]",
-            gradient: "#C60DD6, #BC6ED9, #C60DD6",
+            titleGradient: "#935AAF, #702893, #935AAF",
             buttonBg: "bg-[#7108A8]",
-            containerBg: "bg-[#F6F4F8E3]",
+            containerBg: "bg-[#F6F4F8D9]",
             containerBorder: "border-[#E700FF]",
+            cardGradient: "#fff",
+            cadGradientExpansion: "30%",
+            techCardBg: "bg-white",
+            cardBgHover: "bg-[#F6F6F6]"
+            
         }
     },
 
@@ -32,12 +38,17 @@ const themes = {
             text: "text-white",
             highlightText: "text-purple-300",
             navBg: "bg-[#26162f]",
-            icons: "text-royal-purple",
-            title: "text-light-purple",
-            gradient: "#FFFFFFCC,  #c084fc,#FFFFFFCC",
+            icons: "text-[#a021c8]",
+            iconsBg: "bg-black/20",
+            title: "text-[#c084fc]",
+            titleGradient: "#E4C4F4, #965CB1, #E4C4F4",
             buttonBg: "bg-[#9E0BA5]",
-            containerBg: "bg-dark-alpha",
+            containerBg: "bg-[#151313BF]",
             containerBorder: "border-purple-500",
+            cardGradient: "#240B34",
+            cadGradientExpansion: "42%",
+            techCardBg: "bg-[#413152]",
+            cardBgHover: "bg-[#121212B0]"
         }
     }
 };

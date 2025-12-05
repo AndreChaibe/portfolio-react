@@ -8,7 +8,7 @@ const projectsData = [
         id: 1,
         name: "Action-Verse",
         image: actionVerseImg,
-        description: "O Action Verse é um mini e-commerce de lista de produtos com carrinho de compras funcional.",
+        description: "Mini e-commerce criado como projeto pessoal. Nele, é possível visualizar produtos, adicionar ou remover itens do carrinho, controlar quantidades e ver o total do pedido atualizado em tempo real. Todo o visual é responsivo. O projeto foi desenvolvido sem frameworks.",
         technologies: ["HTML", "CSS", "JavaScript"],
         repoUrl: "https://github.com/seu-usuario/action-verse",
         liveUrl: "https://seu-usuario.github.io/action-verse"
@@ -17,7 +17,7 @@ const projectsData = [
         id: 2,
         name: "Redação Nota Mil Hub",
         image: redacaoImg,
-        description: "Site institucional para divulgação de um curso denominado'Redação Nota Mil'.",
+        description: "Site institucional com carrossel de professores interativo, informações do curso, cronograma, preços, contato direto via WhatsApp e mapa interativo para facilitar a localização e a comunicação com alunos.",
         technologies: ["HTML", "CSS", "JavaScript", "API"],
         repoUrl: "https://github.com/seu-usuario/landing-page-freelancer",
         liveUrl: "https://seu-usuario.github.io/landing-page-freelancer"
@@ -26,7 +26,7 @@ const projectsData = [
         id: 3,
         name: "GitHub user search",
         image: githubImg,
-        description: "Desenvolvido utilizando HTML, CSS e JavaScript para consumir a API do GitHub. A aplicação permite pesquisar perfis de usuários e exibir informações detalhadas, ajudando na análise de perfis de desenvolvedores, permitindo uma avaliação rápida das habilidades e contribuições por meio dos repositórios e atividades recentes.",
+        description: "Aplicação web responsiva para buscar perfis no GitHub consumindo sua API. A ferramenta permite pesquisar usuários, visualizar informações detalhadas e repositórios, facilitando a análise rápida de perfis por desenvolvedores e recrutadores.",
         technologies: ["HTML", "CSS", "JavaScript", "API"],
         repoUrl: "https://github.com/seu-usuario/github-search",
         liveUrl: "https://seu-usuario.github.io/github-search"
@@ -35,7 +35,7 @@ const projectsData = [
         id: 4,
         name: "Formulários de Validação",
         image: formularioImg,
-        description: "Este projeto envolve a implementação de um formulário de contato com validação de campos obrigatórios.",
+        description: "Formulário de contato responsivo, focado em validar campos obrigatórios para garantir a integridade dos dados. Se algum campo não for preenchido, o usuário recebe feedback imediato através de mensagens de erro e bordas em destaque vermelho.",
         technologies: ["HTML", "CSS", "JavaScript"],
         repoUrl: "https://github.com/seu-usuario/form-validation",
         liveUrl: "https://seu-usuario.github.io/form-validation"

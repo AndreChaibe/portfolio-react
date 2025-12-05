@@ -12,9 +12,11 @@ const SectionFeedbacks = () => {
 
     return (
         <section className="flex flex-col justify-center w-full pb-8">
-            <ShinyText>
-                <h2 className={`text-5xl font-title text-center mb-10 ${theme.colors.title}`}>Recomendações</h2>
+            
+            <ShinyText gradientColors="#FFFFFFCC, #c084fc, #FFFFFFCC">
+                <h2 className="text-5xl font-title text-center mb-10">Recomendações</h2>
             </ShinyText>
+
             <ul className={`flex flex-col gap-10 font-general text-[0.9em] px-20 
 
                 [&>li]:flex [&>li]:flex-col [&>li]:gap-5 [&>li]:p-9 [&>li]:relative [&>li]:border-2 
@@ -26,17 +28,17 @@ const SectionFeedbacks = () => {
                 {recommendationsData.map(recommendation => (
                     <motion.li
                         key={recommendation.id}
-                        className={`${theme.colors.containerBg} ${theme.colors.containerBorder}`}
+                        className={`${theme.background} ${theme.colors.containerBorder}`}
                         initial={{ scale: 0.5, opacity: 0.1 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ type: "tween", ease: "easeInOut", duration: 0.5 }}
                     >
-                        <p className={`text-justify ${theme.colors.text}`}>{recommendation.text}</p>
+                        <p className="text-justify">{recommendation.text}</p>
                         <MessageSquareQuote className={`w-30 h-18 absolute right-[1rem] bottom-7 opacity-23 ${theme.colors.icons}`} />
 
                         <div>
                             <img src={`${recommendation.photo}`} alt={`${recommendation.altText}`} />
-                            <div className={theme.colors.text}>
+                            <div>
                                 <p>{recommendation.name}</p>
                                 <p className={`${theme.colors.highlightText}`}>{recommendation.position}</p>
                             </div>
