@@ -1,7 +1,7 @@
 import { use } from "react";
 import { ThemesContext } from "../../context/Themes";
 import { ShinyText } from "../../ui/animations";
-import Form from "./components/form";
+import Form from "./components/Form.jsx";
 
 const Contact = () => {
   const { theme } = use(ThemesContext);
