@@ -14,15 +14,18 @@ const SectionFeedbacks = () => {
         <section className="flex flex-col justify-center w-full pb-8">
             
             <ShinyText gradientColors="#FFFFFFCC, #c084fc, #FFFFFFCC">
-                <h2 className="text-5xl font-title text-center mb-10">Recomendações</h2>
+                <h2 className="text-5xl font-extrabold text-center mb-10 max-[445px]:text-[2.5rem]">Recomendações</h2>
             </ShinyText>
 
-            <ul className={`flex flex-col gap-10 font-general text-[0.9em] px-20 
+            <ul className={`flex flex-col gap-10 text-[0.9em] px-20 
 
                 [&>li]:flex [&>li]:flex-col [&>li]:gap-5 [&>li]:p-9 [&>li]:relative [&>li]:border-2 
                 [&>li>div]:flex [&>li>div]:gap-5 [&>li]:rounded-[3%]
-                [&>li>p]:text-justify [&>li>p]:border-b-3 [&>li>p]:border-b-[#7600FF54] [&>li>p]:pb-4
+                [&>li>p]:border-b-3 [&>li>p]:border-b-[#7600FF54] [&>li>p]:pb-4
                 [&>li>div>img]:rounded-[50%] [&>li>div>img]:w-15 [&>li>div>img]:h-15
+
+                max-[665px]:px-8 
+                max-[500px]:px-0 
                 `}>
 
                 {recommendationsData.map(recommendation => (
@@ -36,7 +39,7 @@ const SectionFeedbacks = () => {
                         <p className="text-justify">{recommendation.text}</p>
                         <MessageSquareQuote className={`w-30 h-18 absolute right-[1rem] bottom-7 opacity-23 ${theme.colors.icons}`} />
 
-                        <div>
+                        <div className="max-[360px]:text-[13px]">
                             <img src={`${recommendation.photo}`} alt={`${recommendation.altText}`} />
                             <div>
                                 <p>{recommendation.name}</p>

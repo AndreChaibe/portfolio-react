@@ -1,11 +1,21 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
+
 const ButtonToggleViewProjects = ({ children, onClick }) => {
     return (
-        <button 
+        <motion.button
             onClick={onClick}
-            className="cursor-pointer rounded-[5%] px-10 py-3 mb-7 mt-5 bg-purple-800 text-white"
+            className="translate-x-[72%] cursor-pointer rounded-[5%] mx-11 py-3 bg-purple-800 text-white
+                       max-[690px]:translate-x-[0%]
+                       max-[690px]:mx-10
+
+                       [@media(max-height:630px)]:mb-[19%]"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "tween", ease: "easeInOut", duration: 0.5, delay: 0.1 }}
         >
             {children}
-        </button>
+        </motion.button>
     );
 }
 

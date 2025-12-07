@@ -8,7 +8,7 @@ const recommendationsData = [
     {
         id: 1,
         name: "Mário Carlaibe",
-        position: "Desenvolvedor Full Stack Júnior",
+        position: "Dev Full Stack Júnior",
         photo: marioPhoto,
         altText: "Homem de meia-idade, de pele clara e careca, que exibe uma barba preta cheia e usa óculos de grau de aros escuros e retangulares. Ele está vestido formalmente com um blazer escuro sobre uma camisa branca, e seu olhar é direto e sério para a câmera, com um fundo simples e desfocado.",
         text: "Sua coerência nas ideias, comunicação clara e proatividade foram sempre marcantes em todos os projetos e interações em grupo. O André é uma pessoa fantástica – sempre disposto a ajudar quem precisa, criando um ambiente colaborativo e acolhedor. Sua inteligência acima da média o torna um membro valioso em qualquer equipe, capaz de trazer soluções criativas e eficientes para os desafios que surgem. Sem dúvida, o André é alguém com quem eu gostaria de trabalhar novamente e que recomendo com entusiasmo!",
@@ -24,7 +24,7 @@ const recommendationsData = [
     {
         id: 3,
         name: "Diego Marques",
-        position: "Desenvolvedor Web Front-end",
+        position: "Dev Web Front-end",
         photo: diegoPhoto,
         altText: "homem jovem, com cabelos escuros e curtos penteados para trás, e pele em tom moreno claro. Ele tem um sorriso aberto e amigável, mostrando os dentes, e seus olhos são grandes e escuros. Ele está vestido com uma camisa ou suéter de cor escura (possivelmente preto), com uma gola branca ou cinza-clara visível por baixo.",
         text: "Recomendo muito o André, pelo fato de ver seu esforço sempre, estudamos na mesma instituição e posso ver seu progresso que é notável, um colega muito aplicado e sempre contribuindo com a comunidade de desenvolvedores, sempre engajado e colocando em prática tudo que está aprendendo, tenho certeza que ele será um diferencial por onde quer que atue, a empresa que der uma oportunidade, terá um grande profissional!",
@@ -34,7 +34,7 @@ const recommendationsData = [
         name: "Guilherme Martins",
         photo: guilhermePhoto,
         altText: "Homem jovem, com pele parda ou morena e cabelo escuro, raspado nas laterais e curto no topo, penteado para trás. Ele usa óculos de grau de aros finos e claros e tem uma barba rala e cavanhaque bem desenhado. Ele exibe um sorriso largo e alegre, mostrando os dentes. O homem veste uma camisa social de manga curta ou dobrada, de cor azul-marinho ou azul-escuro.",
-        position: "Engenheiro de computação",
+        position: "Cibersegurança",
         text: "Apesar de não termos trabalhado juntos, o André ajudou muito no meu aprendizado como desenvolvedor. Através das postagens e conteúdos que ele compartilha, pude aprender muito sobre JavaScript e boas práticas de front-end. Suas dicas são sempre claras, práticas e super úteis para quem está estudando ou se aprimorando na área.",
     },
     {
@@ -43,7 +43,7 @@ const recommendationsData = [
         photo: gustavoPhoto,
         altText: "Homem jovem, de pele clara, com cabelo escuro e barba fina. Ele está vestindo uma camisa de gola branca sob um suéter marrom-escuro e mantém uma expressão neutra enquanto olha diretamente para a câmera, com um fundo desfocado.",
         text: "Recomendo André Chaibe, meu colega de curso, para uma posição de Desenvolvedor Web. Durante nosso tempo juntos, observei sua dedicação, evolução constante e interesse em aprimorar suas habilidades técnicas. André se destaca pelo comprometimento e por sua postura colaborativa, contribuindo para o crescimento da equipe e para a criação de projetos de qualidade. Tenho plena confiança de que ele agregará valor a qualquer organização.",
-        position: "React Frontend Developer",
+        position: "Dev Web Front-end",
     }
 ]
 

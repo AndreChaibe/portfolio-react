@@ -1,6 +1,8 @@
 import { use } from 'react';
 import { ThemesContext, themes } from "../../context/Themes.jsx";
 import { SquareSplitHorizontal } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion/react';
 
 function saveThemeToStorage(theme) {
     localStorage.setItem("currentTheme", JSON.stringify(theme));
@@ -16,18 +18,24 @@ const ButtonToggleThema = () => {
         saveThemeToStorage(newTheme);
     };
 
-    // function themeIconDescription() {
-    //     if (theme.background == "bg-modal-white") return "Ícone de um sol roxo com raios curtos ao redor, sobre um fundo lilás claro. O design representa o dia, o modo claro ou a ideia de luminosidade e energia."
-
-    //     else return "Ícone de uma lua crescente roxa com duas pequenas estrelas acima, sobre um fundo roxo escuro. O design transmite a ideia de noite, modo noturno ou descanso."
-    // }
-
-
     return (
-        <button onClick={handleToggleTheme}>
-            <SquareSplitHorizontal className={`${theme.background} w-17 h-17 ${theme.colors.icons} cursor-pointer bg-black/25 rounded-[50%] p-2.5 border-4 border-[#734892] transition-transform duration-500 ease-in-out hover:scale-105 active:scale-95 ${theme.background ? '-scale-x-100' : 'scale-x-100'}`} />
-        </button>
+        <motion.button
+            onClick={handleToggleTheme}
+            whileHover={{
+                scale: 1.05,
+                rotateY: 180  
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className={`cursor-pointer rounded-full p-2.5 flex items-center justify-center
+            `}
+        >
+            <SquareSplitHorizontal className={`${theme.background} w-17 h-17 ${theme.colors.icons} cursor-pointer bg-black/25 rounded-[50%] p-2.5 border-4 border-[#734892] max-[470px]:w-15 max-[470px]:h-15`} />
+        </motion.button>
     );
 };
+
+
+
 
 export default ButtonToggleThema;

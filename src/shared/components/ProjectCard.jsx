@@ -11,11 +11,14 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
     return (
         <article>
             <motion.div
+            className='flex flex-col justify-center
+                        max-[362px]:items-center'
                 initial={{ opacity: 0, translateY: -20 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{ type: "tween", ease: "easeInOut", duration: 0.5, delay: 0.1 }}
             >
-                <div className="group relative overflow-hidden rounded-2xl shadow-[1px_1px_15px_2px_rgba(105,59,127,0.74)] w-[313px] transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50 cursor-pointer">
+                <div className="group relative overflow-hidden rounded-2xl shadow-[1px_1px_15px_2px_rgba(105,59,127,0.74)]  transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/50 cursor-pointer
+                max-[362px]:w-[290px]">
 
                     <img src={projectInfor.image} alt="" className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" />
 
@@ -80,7 +83,10 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
 
                 <div className={`flex items-center justify-center my-1 relative text-white bg-[#942d9d] border-2 border-[#6C21B3AB] translate-y-[-6px] rounded-2xl text-[14px]
                                  [&>div]:flex [&>div]:items-center [&>div]:gap-1 [&>div]:h-[100%] [&>div]:py-2.5 
-                                 [&>div>svg]:w-[17px] [&>div>span]:font-bold`}>
+                                 [&>div>svg]:w-[17px] [&>div>span]:font-bold
+
+                                 max-[362px]:[&>div]:px-4
+                                 max-[362px]:[&>div>span]:text-[13px]`}>
 
                     <motion.div className="border-r-2 border-[#ffffffab] pr-5">
                         <span>Demo ao vivo</span>

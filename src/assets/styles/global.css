@@ -7,6 +7,13 @@
 
   --color-modal-white: #FFFF;
   --color-modal-black: #00000099;
+
+  --breakpoint-2xl: 1535px;
+  --breakpoint-xl: 1341px;
+  --breakpoint-lg: 1077px;
+  --breakpoint-md: 767px;
+  --breakpoint-sm: 639px;
+  --breakpoint-xs: 475px;
 }
 
 @layer utilities {
@@ -14,21 +21,21 @@
     scrollbar-width: thin;
     scrollbar-color: #9a00ee #9c9a9c3b;
   }
-  
+
   .scrollbar-custom::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   .scrollbar-custom::-webkit-scrollbar-track {
     background: #1a1a1a;
     border-radius: 10px;
   }
-  
+
   .scrollbar-custom::-webkit-scrollbar-thumb {
     background: #a855f7;
     border-radius: 10px;
   }
-  
+
   .scrollbar-custom::-webkit-scrollbar-thumb:hover {
     background: #c084fc;
   }

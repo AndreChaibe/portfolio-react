@@ -15,11 +15,18 @@ const NavigationHeader = () => {
     ]
 
     return (
-        <nav className={`${theme.background} rounded-2xl border-2 border-purple-500/20 p-0 m-0`}>
-            <ul className="flex gap-8 pt-3.5 pr-7 pb-3.5 pl-7">
+        <nav className={`${theme.background} rounded-2xl p-0 m-0 z-4
+                         max-[690px]:fixed 
+                         max-[690px]:bottom-0 
+                         max-[690px]:left-0 
+                         max-[690px]:right-0
+                         max-[690px]:rounded-[0]
+         `}>
+            <ul className="flex justify-center gap-8 py-3.5 px-7
+                          max-[400px]:gap-6.5">
                 {InforItems.map(item => (
-                    <li 
-                        key={item.route} 
+                    <li
+                        key={item.route}
                         data-tooltip={item.name}
                         className={`relative cursor-pointer  
                                    [&>a>svg]:w-12 [&>a>svg]:h-12 ${theme.colors.icons}
@@ -28,7 +35,7 @@ const NavigationHeader = () => {
                                    after:${theme.background} 
                                    after:text-[1.2rem]
                                    after:border-2 
-                                   after:bg-purple-500/30 
+                                   after:bg-purple-500/80 
                                    after:border-purple-500
                                    after:text-white
                                    after:rounded-md 
@@ -42,7 +49,16 @@ const NavigationHeader = () => {
                                    after:pointer-events-none
                                    after:transition-all
                                    after:duration-300 
-                                   hover:after:opacity-100`}
+                                   hover:after:opacity-100
+                                   
+                                   max-[690px]:after:top-[-5vh]
+                                   max-[690px]:after:text-[0.9rem]
+                                   max-[690px]:after:px-2 
+                                   max-[690px]:after:py-1 
+                                   max-[400px]:[&>a>svg]:w-10
+                                   max-[400px]:[&>a>svg]:h-10
+                                   max-[329px]:[&>a>svg]:w-8.5
+                                   max-[329px]:[&>a>svg]:h-8.5`}
                     >
                         <Link to={item.route}>{item.icon}</Link>
                     </li>

@@ -9,7 +9,7 @@ const EvolutionNote = () => {
     const { theme } = use(ThemesContext);
 
     return (
-        <aside className={`flex flex-col items-center justify-center mb-10`}>
+        <aside className={`flex flex-col items-center justify-center mb-5`}>
             <div className={`flex items-center justify-centergap-1.5 ${theme.background} px-5 border-4 border-[#9908C39E] rounded-lg`}>
 
                 <motion.div className="w-4 h-4 bg-purple-500 rounded-[50%]"

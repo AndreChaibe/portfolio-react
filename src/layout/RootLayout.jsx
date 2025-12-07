@@ -7,10 +7,14 @@ const RootLayout = () => {
     return (
         <>
             <Header />
-            <div className='relative z-1 flex justify-center items-center w-[100%] h-[100%]'>
+            <div className='relative z-1 flex justify-center items-center w-[100%] h-[100%] right-34 
+            max-[1010px]:right-0 
+            max-[690px]:top-[-2rem]
+            '>
                 <Outlet />
                 <BigOwlMascot />
             </div>
+
             <BlurGradient
                 colors={['#8B5CF69C', '#846AAF']}
                 position="bottom"
