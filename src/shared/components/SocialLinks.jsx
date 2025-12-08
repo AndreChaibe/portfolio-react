@@ -6,7 +6,12 @@ const SocialLinks = ({bgIcons= ""}) => {
     return (
         <nav>
             <ul className='flex gap-7
-                          [&>li>svg]:fill-current [&>li>svg]:rounded-[35%] [&>li>svg]:p-2.5 [&>li>svg]:text-[#a021c8]'>
+                          [&>li>svg]:fill-current [&>li>svg]:rounded-[35%] [&>li>svg]:p-2.5 [&>li>svg]:text-[#a021c8]
+                          max-[723px]:[&>li>svg]:w-[53px]
+                          max-[723px]:[&>li>svg]:h-[53px]
+                          max-[575px]:gap-4
+                          max-[575px]:[&>li>svg]:w-[47px]
+                          max-[575px]:[&>li>svg]:h-[47px]'> 
 
                 <motion.li
                     initial={{ opacity: 0, translateY: -50 }}

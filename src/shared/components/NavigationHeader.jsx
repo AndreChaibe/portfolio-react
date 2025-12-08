@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavigationHeader = () => {
     const { theme } = use(ThemesContext)
-
+console.log(theme)
     const InforItems = [
         { icon: <House />, route: "/", name: "Home" },
         { icon: <ContactRound />, route: "/about", name: "Sobre" },
@@ -15,7 +15,7 @@ const NavigationHeader = () => {
     ]
 
     return (
-        <nav className={`${theme.background} rounded-2xl p-0 m-0 z-4
+        <nav className={`${theme.background == "bg-modal-white"? "bg-white" : "bg-black"} rounded-2xl p-0 m-0 z-4 
                          max-[690px]:fixed 
                          max-[690px]:bottom-0 
                          max-[690px]:left-0 

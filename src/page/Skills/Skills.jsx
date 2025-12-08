@@ -21,8 +21,11 @@ const Skills = () => {
     }, [activeTab]);
 
     return (
-        <main className="flex flex-col justify-center items-center w-[50em] ">
-            <div className={`flex flex-col items-center justify-center w-150 ${theme.background} border-4 border-[#9908C39E] rounded-lg mb-1`}>
+        <main className="flex flex-col justify-center items-center w-[50em] overflow-y-auto overflow-x-hidden scrollbar-custom
+                         [@media(max-height:580px)]:h-[17rem] [@media(max-height:708px)]:justify-normal"> 
+            <div className={`flex flex-col items-center justify-center w-150 ${theme.background} border-4 border-[#9908C39E] rounded-lg mb-1 
+                              max-[505px]:w-[30rem]
+                             `}>
                 <ShinyText gradientColors={theme.colors.titleGradient}>
                     <h1 className="text-5xl w-[100%] font-title text-center px-9 py-6">Habilidades</h1>
                 </ShinyText>

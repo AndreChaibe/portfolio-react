@@ -7,7 +7,7 @@ const ProjectsGrid = ({ StateView, onToggle, showAll }) => {
 
     return (
         <div className="grid grid-cols-2 relative gap-x-8 gap-y-10 overflow-y-auto overflow-x-hidden scrollbar-custom h-[30rem]
-                        max-[690px]:grid-cols-1 [@media(min-height:947px)]:h-[31rem]">
+                        max-[690px]:grid-cols-1 [@media(min-height:730px)]:h-[30.5rem]">
             {projectsToShow.map((project) => (
                 <ProjectCard 
                     key={project.id} 

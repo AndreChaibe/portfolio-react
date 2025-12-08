@@ -10,15 +10,15 @@ const EvolutionNote = () => {
 
     return (
         <aside className={`flex flex-col items-center justify-center mb-5`}>
-            <div className={`flex items-center justify-centergap-1.5 ${theme.background} px-5 border-4 border-[#9908C39E] rounded-lg`}>
+            <div className={`flex items-center justify-center gap-1.5 ${theme.background} px-5 border-4 border-[#9908C39E] rounded-lg  max-[456px]:px-3`}>
 
-                <motion.div className="w-4 h-4 bg-purple-500 rounded-[50%]"
+                <motion.div className="min-w-4 min-h-4 bg-purple-500 rounded-[50%]"
                     initial={{ opacity: 0.3 }}
                     animate={{ opacity: 1  }}
                     transition={{repeat: Infinity, repeatType: "reverse", repeatDelay: 0.1 , type: "spring", ease: "easeInOut", mass: 0.1}} />
 
 
-                <p className="p-5 font-general font-bold">Em constante evolução e aprendizado!</p>
+                <p className="p-5 font-general font-bold text-center">Em constante evolução e aprendizado!</p>
             </div>
         </aside>
     )
