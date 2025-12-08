@@ -41,6 +41,17 @@
   }
 }
 
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @font-face {
   font-family: "Supersonic-Rocketship";
   src: url('../fonts/Supersonic-Rocketship.ttf');

@@ -11,7 +11,7 @@ const SectionFeedbacks = () => {
     const { theme } = use(ThemesContext)
 
     return (
-        <section className="flex flex-col justify-center w-full pb-8">
+        <section className="flex flex-col justify-center w-full pb-8 max-[690px]:w-[85%] max-[530px]:w-[78%] max-[450px]:w-[70%]">
             
             <ShinyText gradientColors="#FFFFFFCC, #c084fc, #FFFFFFCC">
                 <h2 className="text-5xl font-extrabold text-center mb-10 max-[445px]:text-[2.5rem]">Recomendações</h2>
@@ -23,9 +23,6 @@ const SectionFeedbacks = () => {
                 [&>li>div]:flex [&>li>div]:gap-5 [&>li]:rounded-[3%]
                 [&>li>p]:border-b-3 [&>li>p]:border-b-[#7600FF54] [&>li>p]:pb-4
                 [&>li>div>img]:rounded-[50%] [&>li>div>img]:w-15 [&>li>div>img]:h-15
-
-                max-[665px]:px-8 
-                max-[500px]:px-2 
                 `}>
 
                 {recommendationsData.map(recommendation => (

@@ -14,7 +14,7 @@ const ProfileCard = () => {
 
     <motion.div
       className={`${theme.background} rounded-b-3xl border-5 ${theme.colors.containerBorder}
-                   max-[690px]:w-[95%]`}
+                   max-[690px]:w-[70%] max-[575px]:w-[55%] max-[413px]:w-[50%]`}
       initial={{ opacity: 0.1, left: -150 }}
       whileInView={{ opacity: 1, left: 0 }}
       transition={{ type: "tween", ease: "easeInOut", duration: 0.5 }}
