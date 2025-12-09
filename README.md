@@ -1,31 +1,19 @@
-# 👨‍💻 André Chaibe - Portfólio Web
+# 👨🏻‍💻 André Chaibe - Portfólio Web 🦉
 
-<div align="center">
-  
 [![My Skills](https://skillicons.dev/icons?i=react,javascript,tailwindcss,vite&theme=dark)](https://skillicons.dev)
-
-[🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/) 
-|
-[📧 Contato](mailto:andrechaibedev@gmail.com) 
-|
-[💼 LinkedIn](https://www.linkedin.com/in/andre-chaibe/)
-
-</div>
-
+[🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/)|[📧 Contato](mailto:andrechaibedev@gmail.com)|[💼 LinkedIn](https://www.linkedin.com/in/andre-chaibe/)
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Características Principais](#características-principais)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação e Configuração](#instalação-e-configuração)
-- [Como Usar](#como-usar)
-- [Página de Projetos](#página-de-projetos)
-- [Página de Habilidades](#página-de-habilidades)
-- [Página Sobre](#página-sobre)
-- [Contato](#contato-pessoal)
-- [Temas e Customização](#temas-e-customização)
-- [Performance e Otimizações](#performance-e-otimizações)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Screenshots](#-screenshots)
+- [Características Principais](#-características-principais)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Instalação e Configuração](#-instalação-e-configuração)
+- [Como Usar](#-como-usar)
+- [Temas e Customização](#-temas-e-customização)
+- [Performance e Otimizações](#-performance-e-otimizações)
+- [Contato](#-contato-pessoal)
 
 ---
 
@@ -78,36 +66,6 @@ O projeto foi construído com foco em:
 - **Integração EmailJS**: Envio de mensagens direto do formulário
 - **Validação de Campos**: Feedback imediato de erros
 - **Responsivo**: Funciona em qualquer dispositivo
-
-### 🎯 Seções Principais
-
-#### Home
-- Introdução pessoal impactante
-- Chamada para ação (CTA)
-- Efeito visual do mascote Adamastor (coruja)
-
-#### Sobre
-- Informações pessoais e profissionais
-- Cartão de perfil com foto
-- **Seção de Recomendações**: 
-  - Nomes, fotos e posições dos recomendadores
-  - Textos personalizados de cada pessoa
-
-#### Habilidades
-- Listagem de tecnologias dominadas
-- Listagem de ferramentas utilizadas
-- Seção de evolução e aprendizado
-- **Toggle de visualização**: Alterne entre diferentes categorias
-
-#### Projetos
-- Grid responsivo com 4 projetos principais
-- Visualização de tecnologias usadas
-- Links para repositório (GitHub) e versão ao vivo
-
-#### Contato
-- Formulário de contato funcional
-- Integração com EmailJS para envio de mensagens
-- Design amigável e responsivo
 
 ---
 
@@ -345,5 +303,4 @@ O projeto utiliza Context API do React para gerenciar temas globalmente.
 <div align="center">
 
 Se gostou do projeto, considere deixar uma ⭐ no GitHub!
-
 </div>
