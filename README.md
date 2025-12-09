@@ -1,7 +1,10 @@
 # 👨🏻‍💻 André Chaibe - Portfólio Web 🦉
 
 [![My Skills](https://skillicons.dev/icons?i=react,javascript,tailwindcss,vite&theme=dark)](https://skillicons.dev)
-[🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/)|[📧 Contato](mailto:andrechaibedev@gmail.com)|[💼 LinkedIn](https://www.linkedin.com/in/andre-chaibe/)
+
+[🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/)|
+[📧 Contato](mailto:andrechaibedev@gmail.com)|
+[💼 LinkedIn](https://www.linkedin.com/in/andre-chaibe/)
 
 ## 📋 Índice
 
