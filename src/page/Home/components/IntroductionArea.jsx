@@ -26,7 +26,7 @@ const IntroductionArea = () => {
             </ShinyText>
 
             <div className="font-title text-purple-300 text-center text-[2.2rem]
-            max-[575px]:text-[2rem] max-[485px]:text-[1.8rem]">
+            max-[575px]:text-[2rem] max-[485px]:text-[1.8rem] max-[435px]:w-[290px]">
                 <h2>Sou André Chaibe</h2>
                 <p>Desenvolvedor Front-end</p>
             </div>
