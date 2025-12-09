@@ -11,7 +11,7 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
     return (
         <article>
             <motion.div
-            className='flex flex-col justify-center
+                className='flex flex-col justify-center
                         max-[362px]:items-center'
                 initial={{ opacity: 0, translateY: -20 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
@@ -81,18 +81,18 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
 
                 <div className={`flex items-center justify-center my-1 relative text-white bg-[#942d9d] border-2 border-[#6C21B3AB] translate-y-[-6px] rounded-2xl text-[14px]
                                  [&>div]:flex [&>div]:items-center [&>div]:gap-1 [&>div]:h-[100%] [&>div]:py-2.5 
-                                 [&>div>svg]:w-[17px] [&>div>span]:font-bold
+                                 [&>div>svg]:w-[17px] [&>div>a]:font-bold [&>div>a]:cursor-pointer
 
                                  max-[362px]:[&>div]:px-4
-                                 max-[362px]:[&>div>span]:text-[13px]`}>
+                                 max-[362px]:[&>div>a]:text-[13px]`}>
 
                     <motion.div className="border-r-2 border-[#ffffffab] pr-5">
-                        <span>Demo ao vivo</span>
+                        <a href={projectInfor.liveUrl} target='_black'>Demo ao vivo</a>
                         <ExternalLink strokeWidth={3} />
                     </motion.div>
 
                     <div className='pl-5'>
-                        <span>Repositório</span>
+                        <a href={projectInfor.repoUrl} target='_black'>Repositório</a>
                         <Folders strokeWidth={3} />
                     </div>
                 </div>

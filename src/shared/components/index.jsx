@@ -1,4 +1,4 @@
-export { default as BigOwlMascot } from "./BigOwlMascot";
+export { default as OwlMascot } from "./OwlMascot";
 export { default as NavigationHeader } from "./NavigationHeader";
 export { default as ButtonToggleThema } from "./ButtonToggleThema";
 export { default as SectionSkills } from "./SectionSkills";

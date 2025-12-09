@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header'
-import { BigOwlMascot } from '../shared/components';
+import { OwlMascot } from '../shared/components';
 import { BlurGradient } from '../ui/animations/index';
 
 const RootLayout = () => {
@@ -12,7 +12,7 @@ const RootLayout = () => {
             max-[690px]:top-[-2rem]
             '>
                 <Outlet />
-                <BigOwlMascot />
+                <OwlMascot />
             </div>
 
             <BlurGradient
