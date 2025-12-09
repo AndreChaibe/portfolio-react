@@ -15,10 +15,10 @@ const ProjectsGrid = ({ StateView, onToggle, showAll }) => {
                 />
             ))}
 
-            
             <ButtonToggleViewProjects onClick={onToggle}>
                 {showAll ? "Ocultar projetos" : "Mais projetos"}
             </ButtonToggleViewProjects>
+            
         </div>
     );
 };

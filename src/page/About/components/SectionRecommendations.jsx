@@ -11,7 +11,7 @@ const SectionFeedbacks = () => {
     const { theme } = use(ThemesContext)
 
     return (
-        <section className="flex flex-col justify-center w-full pb-8 max-[690px]:w-[85%] max-[530px]:w-[78%] max-[450px]:w-[70%]">
+        <section className="flex flex-col justify-center w-full pb-8 max-[690px]:w-[85%] max-[530px]:w-[78%] max-[450px]:w-[70%] max-[410px]:w-[60%]">
             
             <ShinyText gradientColors="#FFFFFFCC, #c084fc, #FFFFFFCC">
                 <h2 className="text-5xl font-extrabold text-center mb-10 max-[445px]:text-[2.5rem]">Recomendações</h2>

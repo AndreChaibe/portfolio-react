@@ -2,8 +2,13 @@
 import { motion } from "motion/react";
 import { SocialLinks } from "../../../shared/components";
 import { Send } from "lucide-react";
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 const Form = ({ stateStyle }) => {
+    const formRef = useRef();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -35,9 +40,36 @@ const Form = ({ stateStyle }) => {
         }
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        const SERVICE_ID = 'service_460xr6q';
+        const TEMPLATE_ID = 'template_2l1zwjg';
+        const PUBLIC_KEY = 'xATQBIN9ZlBdJ1sUD';
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+            .then(() => {
+                setSubmitStatus('success');
+                setIsSubmitting(false);
+                formRef.current.reset();
+
+                setTimeout(() => setSubmitStatus(null), 5000);
+            })
+            .catch((error) => {
+                console.error('Erro ao enviar email:', error);
+                setSubmitStatus('error');
+                setIsSubmitting(false);
+                
+                setTimeout(() => setSubmitStatus(null), 5000);
+            });
+    };
+
     return (
         <motion.form
-            action=""
+            ref={formRef}
+            onSubmit={handleSubmit}
             className="flex flex-col px-8 pb-3 mt-1
                  [&>input,&>textarea]:mb-4 [&>input,&>textarea,&>button]:rounded-[5px] 
                  [&>input,&>textarea]:p-2 [&>input,&>textarea]:border-2 [&>input,&>textarea]:w-[100%]"
@@ -51,17 +83,21 @@ const Form = ({ stateStyle }) => {
                 variants={itemVariants}
                 type="text"
                 id="name"
+                name="user_name"
                 placeholder="Digite seu nome"
                 className={`${stateStyle.colors.containerBorder}`}
+                required
             />
 
             <motion.label variants={itemVariants} htmlFor="email">Email</motion.label>
             <motion.input
                 variants={itemVariants}
-                type="text"
+                type="email"
                 id="email"
+                name="user_email"
                 placeholder="Insira seu endereço de e-mail"
                 className={`${stateStyle.colors.containerBorder}`}
+                required
             />
 
             <motion.label variants={itemVariants} htmlFor="subject">Assunto</motion.label>
@@ -69,25 +105,55 @@ const Form = ({ stateStyle }) => {
                 variants={itemVariants}
                 type="text"
                 id="subject"
+                name="subject"
                 placeholder="Assunto da mensagem"
                 className={`${stateStyle.colors.containerBorder}`}
+                required
             />
 
             <motion.label variants={itemVariants} htmlFor="message">Mensagem</motion.label>
             <motion.textarea
                 variants={itemVariants}
                 name="message"
-                id=""
+                id="message"
                 className={`${stateStyle.colors.containerBorder} resize-none h-30`}
+                placeholder="Digite sua mensagem..."
+                required
             />
+
+            {submitStatus === 'success' && (
+                <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-green-500 text-center mb-2 font-semibold"
+                >
+                    ✓ Mensagem enviada com sucesso!
+                </motion.div>
+            )}
+
+            {submitStatus === 'error' && (
+                <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-red-500 text-center mb-2 font-semibold"
+                >
+                    Erro ao enviar. Tente novamente.
+                </motion.div>
+            )}
 
             <motion.div
                 variants={itemVariants}
-                className="flex justify-center gap-3 text-white bg-purple-500 py-3 mt-5 cursor-pointer rounded-[5px]
-            [&>button]:cursor-pointer"
+                className={`flex justify-center gap-3 text-white py-3 mt-5 cursor-pointer rounded-[5px]
+                    [&>button]:cursor-pointer 
+                    ${isSubmitting ? 'bg-purple-400 cursor-not-allowed' : 'bg-purple-500 hover:bg-purple-600'}`}
             >
-                <Send />
-                <button type="submit">Enviar</button>
+                <Send className={isSubmitting ? 'animate-pulse' : ''} />
+                <button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                >
+                    {isSubmitting ? 'Enviando...' : 'Enviar'}
+                </button>
             </motion.div>
 
             <motion.div

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const NavigationHeader = () => {
     const { theme } = use(ThemesContext)
-console.log(theme)
     const InforItems = [
         { icon: <House />, route: "/", name: "Home" },
         { icon: <ContactRound />, route: "/about", name: "Sobre" },

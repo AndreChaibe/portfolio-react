@@ -28,7 +28,6 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
                         background: `linear-gradient(to top, ${theme.colors.cardGradient} ${theme.colors.cadGradientExpansion}, transparent)`
                     }} />
 
-                    {/* Conteúdo padrão */}
                     <div className={`flex flex-col gap-3 relative pt-1 pb-5 px-4 text-[15px] font-bold transition-opacity duration-300 group-hover:opacity-0`}>
 
                         <motion.h2 className="text-[1.1rem] font-extrabold text-white w-[18.7rem] py-[0.2rem] z-1"
@@ -68,11 +67,10 @@ const ProjectCard = ({ isVisible = true, projectInfor }) => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ type: "tween", ease: "easeOut", duration: 0.9, delay: 2.2 }}>
-                            Passe o mouse para ver detalhes
+                            Passe o cursor para ver detalhes
                         </motion.p>
                     </div>
 
-                    {/* Descrição que aparece no hover */}
                     <div className={`absolute inset-0 ${theme.colors.cardBgHover} backdrop-blur-sm flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                         <div className={`${theme.colors.text} text-center`}>
                             <h3 className="text-xl font-bold mb-3 text-[#CA95FF]">{projectInfor.name}</h3>
