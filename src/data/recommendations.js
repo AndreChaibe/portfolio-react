@@ -61,7 +61,7 @@ const recommendationsData = [
         photo: daianePhoto,
         altText: "Mulher jovem, de pele clara, com cabelos cacheados pretos e volumosos na altura do rosto, usando camisa social branca sob um suéter preto com listras brancas, em estilo casual e profissional, enquadrada dos ombros para cima em foto de perfil circular.",
         text: "André é um profissional com um conjunto de habilidades e uma atitude que o destacam em qualquer ambiente de trabalho. Sua integridade, comprometimento e a ética de trabalho são realmente admiráveis. Recomendo André fortemente como um indivíduo confiável, dedicado e com uma capacidade excelente de colaboração e comunicação eficaz.",
-        position: "Dev Web Front-end",
+        position: "Analista Administrativa",
     }
 ]
 
