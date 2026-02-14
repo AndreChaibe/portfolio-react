@@ -2,7 +2,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=react,typescript,tailwindcss,vite&theme=dark)](https://skillicons.dev)
 
-[🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/)|
+[🌐 Acessar Portfólio](portfolio-react-seven-fawn.vercel.app)|
 [📧 Contato](mailto:andrechaibedev@gmail.com)|
 [💼 LinkedIn](https://www.linkedin.com/in/andre-chaibe/)
 
