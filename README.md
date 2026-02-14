@@ -1,6 +1,6 @@
 # 👨🏻‍💻 André Chaibe - Portfólio Web 🦉
 
-[![My Skills](https://skillicons.dev/icons?i=react,javascript,tailwindcss,vite&theme=dark)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,tailwindcss,vite&theme=dark)](https://skillicons.dev)
 
 [🌐 Acessar Portfólio](https://portfolio-react-mokl5j0qf-andrechaibe21-gmailcoms-projects.vercel.app/)|
 [📧 Contato](mailto:andrechaibedev@gmail.com)|
@@ -151,11 +151,12 @@ portfolio/
 │   │       └── index.jsx
 │   │
 │   ├── App.jsx                 # Componente principal
-│   └── main.jsx                # Entry point
+│   ├── main.jsx                # Entry point
+│   └── modules.d.ts            # Declarações de módulos externos para o TypeScript.
 │
 ├── index.html                  # Arquivo HTML principal
+├── tsconfig.json               # Configuração do TypeScript
 ├── vite.config.js              # Configuração do Vite
-├── eslint.config.js            # Configuração do ESLint
 ├── tailwind.config.js          # Configuração do Tailwind (se houver)
 ├── package.json                # Dependências e scripts
 └── README.md                   # Este arquivo
@@ -167,7 +168,7 @@ portfolio/
 
 ### Pré-requisitos
 - **Node.js**: v16 ou superior
-- **npm**: v7 ou superior (ou yarn/pnpm)
+- **npm**: v7 ou superior
 - **Git**: Para clonar o repositório
 
 ### Passos de Instalação
@@ -181,10 +182,6 @@ portfolio/
 2. **Instale as dependências**
    ```bash
    npm install
-   ```
-   Ou com yarn:
-   ```bash
-   yarn install
    ```
 
 3. **Inicie o servidor de desenvolvimento**
@@ -201,9 +198,6 @@ npm run dev
 
 # Build para produção (otimizado e minificado)
 npm run build
-
-# Verificar código com ESLint
-npm run lint
 
 # Preview da build de produção
 npm run preview
