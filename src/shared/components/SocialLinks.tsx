@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import curriculoPDF from '../../assets/documents/Currículo-André-Chaibe.pdf';
+import curriculoPDF from '../../assets/documents/cv-andre-chaibe-desenvolvedor-frontend.pdf';
 
 interface SocialLinksProps {
   bgIcons?: string;
